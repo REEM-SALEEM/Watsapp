@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:watsapp/core/colors/colors.dart';
 
 class CustomElevButton extends StatelessWidget {
   final double? width;
@@ -14,8 +15,9 @@ class CustomElevButton extends StatelessWidget {
       width: width ?? MediaQuery.of(context).size.width - 100,
       child: ElevatedButton(
         onPressed: onPressed,
-        style:
-            ElevatedButton.styleFrom(backgroundColor: const Color(0xFF00A884)),
+        style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.greenDark,
+            foregroundColor: AppColors.backgroundDark),
         child: Text(
           text,
           style: const TextStyle(color: Colors.black),

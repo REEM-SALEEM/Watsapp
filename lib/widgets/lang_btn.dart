@@ -82,7 +82,7 @@ class LanguageButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         splashFactory: NoSplash.splashFactory,
         // highlightColor: context.theme.langButtonHighlightColor,
-        highlightColor: Colors.amber,
+        highlightColor: AppColors.greenDark,
         child: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           child: Row(mainAxisSize: MainAxisSize.min, children: [
